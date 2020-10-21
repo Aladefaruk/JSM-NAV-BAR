@@ -1,0 +1,125 @@
+
+.main-header {
+    width:100%;
+    padding: 10px 16px;
+    position: fixed ;
+    top: 0;
+    background: white;
+    z-index: 1;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+
+
+
+.main-nav__items {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav {
+
+    text-align: right;
+    width: calc(100% - 130px);
+    vertical-align: middle;
+    display: inline-block;
+}
+#logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-nav__item a {
+    color: whitesmoke;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 7px;
+    background: black;
+    border-radius: 20px;
+   
+}
+
+
+.main-nav__item a:hover {
+    color: black;
+    background: transparent;
+}
+
+
+.main-nav__item a:active {
+   padding: 5px;
+   font-size: 15px;
+}
+
+.mobile-nav {
+    display: none;
+    position:fixed;
+    z-index:101;
+    top:0;
+    left:0;
+    background: white;
+    width: 100%;
+    margin-top: 73px;
+    background: black;
+}
+
+.mobile-nav__items {
+    width:90%;
+    height:100%;
+    list-style: none;
+    margin:1% auto;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-nav__item {
+    margin: 30px 0;
+   
+}
+
+.mobile-nav__item a {
+    margin: 1rem 0;
+    color: black;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 7px;
+    background: white;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+.toggles-button {
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+    display: inline-block;
+
+}
+.toggles-button:focus {
+    outline: none;
+}
+
+.toggles-button__bar {
+    width:100%;
+    height: 0.2rem;
+    background: black;
+    display: block;
+    margin: 0.6rem 0;
+
+}
+
+
+@media only screen and (max-width: 40rem) {
+    .main-nav__item a {
+        display: none;   
+    } 
+}
